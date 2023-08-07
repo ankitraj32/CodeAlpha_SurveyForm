@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="./css/demo.css" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <header>Product Survey Form</header>
+            <div class="progress-bar">
+                <div class="step">
+                    <p>
+                        Info
+                    </p>
+                    <div class="bullet">
+                        <span>1</span>
+                    </div>
+                    <div class="check fas fa-check"></div>
+                </div>
+                <div class="step">
+                    <p>
+                        Quality
+                    </p>
+                    <div class="bullet">
+                        <span>2</span>
+                    </div>
+                    <div class="check fas fa-check"></div>
+                </div>
+                <div class="step">
+                    <p>
+                        Fitting
+                    </p>
+                    <div class="bullet">
+                        <span>3</span>
+                    </div>
+                    <div class="check fas fa-check"></div>
+                </div>
+                <div class="step">
+                    <p>
+                        Feedback
+                    </p>
+                    <div class="bullet">
+                        <span>4</span>
+                    </div>
+                    <div class="check fas fa-check"></div>
+                </div>
+            </div>
+            <div class="form-outer">
+                <form action="https://formspree.io/f/mqkvpzpk" method="POST"
+                    class="center">
+                    <div class="page slide-page">
+                        <div class="title">Basic Info:</div>
+                        <div class="field">
+                            <div class="label">First Name</div>
+                            <input type="text" name="name"
+                                placeholder="First name" />
+                        </div>
+                        <div class="field">
+                            <div class="label">Last Name</div>
+                            <input type="text" name="name"
+                                placeholder="Last name" />
+                        </div>
+                        <div class="field">
+                            <div class="label">Email:</div>
+                            <input type="text" name="email"
+                                placeholder="abc123@gmail.com" />
+                        </div>
+                        <div class="field">
+                            <div class="label">Phone No:</div>
+                            <input type="Number" name="phone-no"
+                                placeholder="1234567890" />
+                        </div>
+                        <div class="field">
+                            <div class="label">Gender</div>
+                            <select>
+                                <option value="starter" selected>Choose your
+                                    gender
+                                </option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Defective ones</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <button class="firstNext next">Next</button>
+                        </div>
+                    </div>
+                    <div class="page">
+                        <div class="title">Quality of the product:</div> <br>
+                        <div class="radio-left">
+                            <input type="radio" name="radio1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Excellent
+                            <br> <br>
+                            <input type="radio" name="radio1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Very
+                            Good
+                            <br> <br>
+                            <input type="radio" name="radio1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Good
+                            <br> <br>
+                            <input type="radio" name="radio1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Average <br>
+                            <br>
+                            <input type="radio" name="radio1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Below Average <br>
+                        </div>
+                        <div class="field btns">
+                            <button class="prev-1 prev">Previous</button>
+                            <button class="next-1 next">Next</button>
+                        </div>
+                    </div>
+
+                    <div class="page">
+                        <div class="title">Fitting of the product:</div> <br>
+                        <div class="radio-left">
+                            <input type="radio" name="radio1">&nbsp;&nbsp;&nbsp;&nbsp;
+                            Tight
+                            <br> <br>
+                            <input type="radio" name="radio1">&nbsp;&nbsp;&nbsp;&nbsp;
+                            Little Tight <br> <br>
+                            <input type="radio" name="radio1">&nbsp;&nbsp;&nbsp;&nbsp;
+                            Just Right <br><br>
+                            <input type="radio" name="radio1">&nbsp;&nbsp;&nbsp;&nbsp;
+                            Little Loose <br> <br>
+                            <input type="radio" name="radio1">&nbsp;&nbsp;&nbsp;&nbsp;
+                            Loose
+                            <br>
+                        </div>
+                        <div class="field btns">
+                            <button class="prev-2 prev">Previous</button>
+                            <button class="next-2 next">Next</button>
+                        </div>
+                    </div>
+                    <div class="page">
+                        <div class="title">Write Review:</div> <br>
+                        <textarea name="feedback" rows="20" cols="125"
+                            placeholder="You can write about the fit, material qaulity, colour, comfort,etc."></textarea>
+                        <br>
+                        <div class="field btns">
+                            <button class="prev-3 prev">Previous</button>
+                            <button class="submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <script src="./js/script.js"></script>
+        </body>
+
+    </html>
